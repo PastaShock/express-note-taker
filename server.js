@@ -13,8 +13,34 @@ app.get('/notes', (req, res) => {
 });
 
 app.get('/api', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/404.html'));
+});
+
+app.get('/api/note/:id', (req, res) => {
+    res.json(`data: true`);
+});
+
+app.post('/api/note/:id', (req, res) => {
     res.send(
-        `<p>api return success!</p>`
+        `data`
+    );
+});
+
+app.get('/api/user', (req, res) => {
+    res.send(
+        `data`
+    );
+});
+
+app.get('/api/user', (req, res) => {
+    res.send(
+        `data`
+    );
+});
+
+app.get('/api/user', (req, res) => {
+    res.send(
+        `data`
     );
 });
 
