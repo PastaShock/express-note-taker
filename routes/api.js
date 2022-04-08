@@ -2,7 +2,7 @@ const router = require('express').Router();
 
 const req = require('express/lib/request');
 const res = require('express/lib/response');
-const data = require('../db/db');
+const data = require('../db/data');
 
 router.get('/notes', (req, res) => {
     try {
