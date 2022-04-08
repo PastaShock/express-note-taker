@@ -4,23 +4,23 @@ const req = require('express/lib/request');
 const res = require('express/lib/response');
 const data = require('../db/data');
 
-router.get('/notes', (req, res) => {
+router.get('api/notes', (req, res) => {
     try {
-        data.get().then(notes => res.json(notes));
+        data.get().then(data => res.json(data));
     } catch (err) {
         res.status(500).json(err)
     };
 });
 
-router.post('/notes', (req, res) => {
+router.post('api/notes', (req, res) => {
     try {
-        data.add().then(note => res.json(note));
+        data.add().then(data => res.json(data));
     } catch (err) {
         res.status(500).json(err)
     };
 });
 
-router.delete('/notes:id', (req, res) => {
+router.delete('api/notes:id', (req, res) => {
     try {
         data.delete(req.params.id).then(() => res.json({ ok: true }));
     } catch (err) {
