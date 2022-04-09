@@ -33,6 +33,7 @@ const getNotes = () =>
     },
   });
 
+// fetch the /api/notes/ route to post data.
 const saveNote = (note) =>
   fetch('/api/notes', {
     method: 'POST',
@@ -66,6 +67,7 @@ const renderActiveNote = () => {
   }
 };
 
+// call the save the note in to the db.json file
 const handleNoteSave = () => {
   const newNote = {
     title: noteTitle.value,

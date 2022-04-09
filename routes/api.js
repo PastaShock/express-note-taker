@@ -12,7 +12,7 @@ router.get('api/notes', (req, res) => {
     };
 });
 
-router.post('api/notes', (req, res) => {
+router.post('/api/notes', (req, res) => {
     try {
         data.add().then(data => res.json(data));
     } catch (err) {
@@ -20,7 +20,7 @@ router.post('api/notes', (req, res) => {
     };
 });
 
-router.delete('api/notes:id', (req, res) => {
+router.delete('/api/notes:id', (req, res) => {
     try {
         data.delete(req.params.id).then(() => res.json({ ok: true }));
     } catch (err) {
