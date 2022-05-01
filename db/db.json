@@ -1,12 +1,1 @@
-[
-    {
-        "title": "Test Title",
-        "text": "Test text",
-        "id": "00000000-0000-0000-0000-000000000000"
-    },
-    {
-        "title": "note2",
-        "text": "uuid test",
-        "id": "461abdf4-3bd8-4e24-a20d-c6deac23e7dd"
-    }
-]
+[{"title":"note3","text":"uuid definitely works though","id":"0ac0a0fe-41bb-4859-ab15-090d091cb477"},{"title":"note4","text":"checking params in the console","id":"67cf3d54-8038-470d-a62c-88612cdcbdc7"},{"title":"note5","text":"req.params was logged inside the get on accident","id":"fbb417e7-6ef1-47f3-9a1f-6c427507ac24"},{"title":"note6","text":"changed a retrieveNotes() call to get()","id":"c78b9dce-d8dc-494d-9ced-21c0cbb55782"},{"title":"note7","text":"testing Data.add(req.body).then(req => res.json(newNote))","id":"56d93f3d-fd53-4f42-a7ad-96889be90afe"},{"title":"note8","text":"its kinda working","id":"1eed1129-8ab9-4886-8cdc-5511bdf5a297"},{"title":"note8","text":"its kinda working","id":"30216099-bbdc-4633-b991-48bc0fcf4133"},{"title":"note9","text":"Delete is working Poggers","id":"a6aba308-6043-43b3-9b05-1ebecfa6bbf8"},{"title":"The whole app works","text":"I can create a new note, write the note, save it and then delete it. I can also select the other notes I have saved to see them.","id":"1c93689e-edf2-4215-99be-a257661c7515"}]

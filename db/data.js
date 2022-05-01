@@ -33,9 +33,8 @@ class Data {
         }
         // Use UUID package to add unique IDs
         const newNote = { title, text, id: uuidv4() };
-
         // Retrieve Notes, add the new note, update notes
-        return this.retrieveNotes()
+        return this.get()
             .then(notes => [...notes, newNote])
             .then(updatedNotes => this.write(updatedNotes))
             .then(() => newNote);
@@ -43,7 +42,7 @@ class Data {
 
     // Delete Note function - BONUS
     delete(id) {
-        return this.retrieveNotes()
+        return this.get()
             .then(notes => notes.filter(note => note.id !== id))
             .then(filteredNotes => this.write(filteredNotes));
     }
