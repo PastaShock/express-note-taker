@@ -49,4 +49,4 @@ class Save {
     }
 }
 
-module.exports = new Save();
+module.exports = new Save;
