@@ -25,7 +25,7 @@ github URL: https://github.com/PastaShock/express-note-taker
 ### Why did I make this project?
 I built this project to satisfy a need for a simple web based note taking app that saved information in a simple way.
 
-![screenshot of the app](assets/screenshot.png)
+![screenshot of the app](Assets/screenshot.png)
 
 ### What makes this app standout?
 this project stands out because its data is stored with the webserver making the information available wherever the project is hosted.
