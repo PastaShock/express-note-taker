@@ -1,6 +1,12 @@
 [
     {
-        "title":"Test Title",
-        "text":"Test text"
+        "title": "Test Title",
+        "text": "Test text",
+        "id": "00000000-0000-0000-0000-000000000000"
+    },
+    {
+        "title": "note2",
+        "text": "uuid test",
+        "id": "461abdf4-3bd8-4e24-a20d-c6deac23e7dd"
     }
 ]
