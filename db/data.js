@@ -5,7 +5,7 @@ const { v4: uuidv4 } = require('uuid');
 const readNote = util.promisify(fs.readFile);
 const writeNote = util.promisify(fs.writeFile);
 
-class Save {
+class Data {
     write(note) {
         return writeNote('db/db.json', JSON.stringify(note));
     }
@@ -49,4 +49,4 @@ class Save {
     }
 }
 
-module.exports = new Save;
+module.exports = new Data;

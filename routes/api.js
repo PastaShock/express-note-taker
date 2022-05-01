@@ -1,29 +1,33 @@
-const Api = require('express').Router();
-const data = require('./../db/data');
+const Router = require('express').Router();
+const Data = require('./../db/data');
 
-Api.get('/api/notes', async (req, res) => {
+Router.get('/notes', async (req, res) => {
     try {
-        data.get().then(data => res.json(data));
+        Data.get().then(data => res.json(data));
+        // parseData = Data.read();
+        // res.send(
+        //     `${parseData} \n api route /notes success`
+        //     )
     } catch (err) {
         res.status(500).json(err)
     };
 });
 
-Api.post('/api/notes', async (req, res) => {
+Router.post('/notes', async (req, res) => {
     try {
-        data.add().then(req => res.json(data));
-        res.send(data)
+        Data.add().then(req => res.json(Data));
+        res.send(Data)
     } catch (err) {
         res.status(500).json(err)
     };
 });
 
-Api.delete('/api/notes/:id', async (req, res) => {
+Router.delete('/notes/:id', async (req, res) => {
     try {
-        data.delete(req.params.id).then(() => res.json({ ok: true }));
+        Data.delete(req.params.id).then(() => res.json({ ok: true }));
     } catch (err) {
         res.status(500).json(err)
     };
 });
 
-module.exports = Api;
+module.exports = Router;
